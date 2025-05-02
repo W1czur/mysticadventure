@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-image: url(tapeta\ sklepu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;   
+    align-items: center;
+    
+}
+       
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 35px;
+    justify-content: right;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.big-title-wrapper {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px white;
+}
+
+.big-title {
+    font-size: 55px;
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    
+
+    text-shadow: 
+        3px 3px 6px black,
+        -3px -3px 6px black,
+        3px -3px 6px black,
+        -3px 3px 6px black,
+        0px 0px 15px black;
+}
+
+.vip-box {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    max-width: 1000px;
+    padding: 80px 40px;
+    border: 6px solid white;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.55);
+    box-shadow: 0 0 40px white;
+    text-align: center;
+    
+}
+
+.vip-box h2 {
+    font-size: 65px;
+    font-family: 'Impact', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    text-shadow: 
+        3px 3px 6px black,
+        -3px -3px 6px black,
+        3px -3px 6px black,
+        -3px 3px 6px black,
+        0px 0px 15px black;
+}
+
+.vip-description {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 5px black;
+}
+
+.vip-benefits {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    text-shadow: 1px 1px 5px black;
+}
+
+.vip-benefits li {
+    margin-bottom: 20px;
+}
+
+.vip-price {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+.vip-discord-note {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 25px;
+    text-shadow: 1px 1px 5px black;
+    line-height: 1.6;
+}
