@@ -13,8 +13,8 @@ body {
 
 .menu a:hover,
 .icons a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 5px rgb(72, 72, 92);
+    color: #00ffff; 
+    text-shadow: 0 0 5px darkblue;
     transition: all 0.3s ease;
 }
 
@@ -47,7 +47,7 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
     background-color: #111111;
 }
 
@@ -106,7 +106,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .banner-content {
@@ -120,7 +120,7 @@ body {
     height: auto;
     transform: translateY(-20px);
     transition: transform 0.3s ease;
-    margin-top: 0; 
+    margin-top: 0;
     margin-bottom: 8px; 
 }
 
@@ -144,81 +144,39 @@ body {
     font-size: 25px;
     font-weight: 400;
     margin-top: 10px;
-    color: #dddddd;
+    color: white;
 }
 
-.frame {
-    margin-top: 10px;
-    width: 220px;
-    padding: 15px;
-    border: 2px solid white; 
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif; 
+.voting-section {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.voting-section h2 {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
-    border-radius: 25px;
+    margin-bottom: 15px;
+    color: #111111;
 }
 
-.frame:hover {
-    background-color: rgba(255, 255, 255, 0.4   ); 
-    color: gray; 
-    box-shadow: 0 0 15px gray;
-}
-
-.server-info {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1); 
-    padding: 55px;
-    border-radius: 60px;
-    max-width: 750px;
-    margin: 50px auto;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid gray;
-    margin-top: 7;
-}
-
-.server-info {
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.server-info:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
-    transform: scale(1.01);
-}
-
-.left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
-
-.right {
-    width: 50%;
-    font-size: 20px;
-    text-align: center;
+.vote-box {
+    display: block;
+    background: #333;
+    border: 2px solid #bbb;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
     color: white;
-    font-weight: bold;
-    padding: 20px;
-    white-space: pre-line;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.left h1, .left h2 {
-    text-align: left;
-    color: white;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.left img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
+.vote-box:hover {
+    box-shadow: 0 6px 12px rgba(120, 120, 120, 0.5);
+    border-color: #888;
+    color: #222;
+  }

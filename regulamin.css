@@ -13,8 +13,8 @@ body {
 
 .menu a:hover,
 .icons a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 5px rgb(72, 72, 92);
+    color: #b36029;
+    text-shadow: 0 0 5px darkblue;
     transition: all 0.3s ease;
 }
 
@@ -47,7 +47,7 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
     background-color: #111111;
 }
 
@@ -120,8 +120,8 @@ body {
     height: auto;
     transform: translateY(-20px);
     transition: transform 0.3s ease;
-    margin-top: 0; 
-    margin-bottom: 8px; 
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .banner-content img:hover {
@@ -147,78 +147,46 @@ body {
     color: #dddddd;
 }
 
-.frame {
-    margin-top: 10px;
-    width: 220px;
-    padding: 15px;
-    border: 2px solid white; 
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif; 
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
-    border-radius: 25px;
-}
-
-.frame:hover {
-    background-color: rgba(255, 255, 255, 0.4   ); 
-    color: gray; 
-    box-shadow: 0 0 15px gray;
-}
-
 .server-info {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1); 
-    padding: 55px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
     border-radius: 60px;
-    max-width: 750px;
+    max-width: 900px;
     margin: 50px auto;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     border: 2px solid gray;
-    margin-top: 7;
-}
-
-.server-info {
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    color: white;
 }
 
 .server-info:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
     transform: scale(1.01);
 }
 
-.left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+.server-info h1 {
+    font-size: 28px;
+    color: #4db8ff;
+    margin-bottom: 20px;
 }
 
-.right {
-    width: 50%;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding: 20px;
-    white-space: pre-line;
+.regulamin-list {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.left h1, .left h2 {
-    text-align: left;
-    color: white;
-    font-size: 22px;
+.regulamin-subpoints .subpoint {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-left: 4px solid #4db8ff;
     margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
-.left img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+.regulamin-subpoints .subpoint:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
