@@ -13,7 +13,7 @@ body {
 
 .menu a:hover,
 .icons a:hover {
-    color: #00ffff; 
+    color: #b36029; 
     text-shadow: 0 0 5px darkblue;
     transition: all 0.3s ease;
 }
